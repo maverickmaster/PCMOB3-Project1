@@ -2757,7 +2757,7 @@ export default function App() {
         style={{
           padding: 20,
           margin: 10,
-          backgroundColor: "lightblue",
+          backgroundColor: "lightgreen",
           borderBottomColor: "#999",
           borderBottomWidth: 1,
           shadowColor: "black",
