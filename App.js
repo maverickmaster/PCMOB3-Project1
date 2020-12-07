@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 const names = [
+  "Milton",
   "Aaran",
   "Aaren",
   "Aarez",
@@ -28,16 +29,13 @@ const names = [
 ];
 
 export default function App() {
-  function displayNames() {
-    let nameJSX = [];
-    let name;
-    for (name of names) {
-      nameJSX.push(<Text>{name}</Text>);
-    }
-    return nameJSX;
-  }
-
-  return <View style={styles.container}>{displayNames()}</View>;
+  return (
+    <View style={styles.container}>
+      {names.map((name) => {
+        return <Text>{name}</Text>;
+      })}
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
