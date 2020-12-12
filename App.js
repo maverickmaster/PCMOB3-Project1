@@ -2,7 +2,6 @@ import React from "react";
 import { StyleSheet, Text, FlatList, View, SafeAreaView } from "react-native";
 
 const names = [
-  "Milton",
   "Aaran",
   "Aaren",
   "Aarez",
